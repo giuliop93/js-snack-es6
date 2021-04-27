@@ -30,3 +30,29 @@ for (i = 0; i < bicycles.length; i++) {
 console.log(biciLeggera);
 const [bicycles[i]] = bicycles;
 console.log(bicyclesOne, bicyclesTwo);
+
+//versione di florian
+const lighterBike = findLighterBike(bicyclesList);
+
+const findLighterBike = (arrayList) => {
+    let lighterBike
+// o (senza arrow function)
+function findLighterBike(arrayList){
+    for (i = 0; i < arrayList.length; i++){
+        const { name, weight } = arrayList[i];
+
+        if(!lighterBike || weight < lighterBike.weight) {
+            lighetrBike = {
+                name,
+                weight
+                //oppure, che è uguale, usando lo spread operator
+                ...bici
+            }
+        }
+    }
+    return lighterBike;
+}
+
+const foundLighterBike = findLighterBike(bicyclesList);
+
+console.log(foundLighterBike);
