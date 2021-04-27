@@ -20,5 +20,5 @@ const footballTeams = [
 ]
 
 // Generare numeri random al posto degli 0 nelle proprietà: Punti fatti e falli subiti.
-footballTeams.pts
+const randomNumber
 // Infine usando la destrutturazione creiamo un nuovo array i cui elementi contengono solo nomi e falli subiti e stampiamo tutto in console.
