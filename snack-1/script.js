@@ -55,4 +55,20 @@ function findLighterBike(arrayList){
 
 const foundLighterBike = findLighterBike(bicyclesList);
 
+
+//versione più smart, usando il sort al posto del for
+bicyclesList.sort(a, b) = a.weight - b.weight)
+
+bicyclesList.sort((a, b) = > {
+    const result = a.weight - b.weight;
+
+    if (result > 0) {
+        return -1
+    } else if (result < 0= {
+        return -1
+    } else {
+        return 0
+    }
+}
+
 console.log(foundLighterBike);
